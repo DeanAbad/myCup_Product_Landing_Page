@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ffff99;
+    text-align: center;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 0 10px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(119, 64, 34, 1);
+}
+
+#header-img {
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    object-position: 50%;
+}
+
+#nav-bar-container {
+    padding: 31px 0 32px 0;
+}
+
+.nav-link div {
+    background-color: #774022;
+    color: white;
+    text-decoration: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    transition: background-color 0.15s ease-in-out;
+}
+
+.nav-link div:hover {
+    background-color: #97512b;
+}
+
+#products {
+    margin-top: 100px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#products h1, #services h1, #contacts h1, #about-us h1 {
+    margin: 0;
+    font-family: Lobster, Helvetica, sans-serif;
+    font-size: 60px;
+    color: rgba(119, 64, 34, 1);
+}
+
+#products-list {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#products-list figure {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 10px;
+    background-color: white;
+    color: rgba(119, 64, 34, 1);
+    transition: margin 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#products-list figure:hover {
+    margin: -5px 0 0 -5px;
+    box-shadow: 10px 10px 1px rgba(119, 64, 34, 1);
+}
+
+#products-list figure img {
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: 0 80%;
+}
+
+#products-list figure figcaption {
+    margin: 10px 0 0 0;
+    font-weight: 900;
+}
+
+#products-list figure p {
+    margin: 0;
+    font-weight: 900;
+}
+
+#products-list figure form {
+    margin: 10px 0 0 0;
+}
+
+#products-list figure form input[type="submit"] {
+    color: rgba(119, 64, 34, 1);
+}
+
+hr {
+    border: none;
+    border-top: 20px dotted rgba(119, 64, 34, 1);
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
+
+table {
+    margin: 20px auto;
+    padding: 0 30px 20px 30px;
+    background-color: white;
+    color: rgba(119, 64, 34, 1);
+    box-shadow: 10px 10px 1px rgba(119, 64, 34, 1);
+}
+
+#form {
+    margin: auto;
+    padding: 20px 30px;
+}
+
+#form input {
+    padding: 20px;
+    font-size: 20px;
+}
+
+/* Mobile phone size */
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    width: 100%;
+    /*border: 1px dashed red;*/
+}
+
+@media only screen and (min-width: 700px) {
+    /* Tablet size */
+    .col-s-1 { width: 8.33%; }
+    .col-s-2 { width: 16.66%; }
+    .col-s-3 { width: 25%; }
+    .col-s-4 { width: 33.33%; }
+    .col-s-5 { width: 41.66%; }
+    .col-s-6 { width: 50%; }
+    .col-s-7 { width: 58.33%; }
+    .col-s-8 { width: 66.66%; }
+    .col-s-9 { width: 75%; }
+    .col-s-10 { width: 83.33%; }
+    .col-s-11 { width: 91.66%; }
+    .col-s-12 { width: 100%; }
+}
+
+@media only screen and (min-width: 800px) {
+    /* Desktop size */
+    .col-1 { width: 8.33%; }
+    .col-2 { width: 16.66%; }
+    .col-3 { width: 25%; }
+    .col-4 { width: 33.33%; }
+    .col-5 { width: 41.66%; }
+    .col-6 { width: 50%; }
+    .col-7 { width: 58.33%; }
+    .col-8 { width: 66.66%; }
+    .col-9 { width: 75%; }
+    .col-10 { width: 83.33%; }
+    .col-11 { width: 91.66%; }
+    .col-12 { width: 100%; }
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        background-color: lightblue;
+    }
+
+    #header-img {
+        width: 200px;
+        height: 100px;
+    }
+
+    #products {
+        margin-top: 0;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    #products-list figure img {
+        width: 200px;
+    }
+
+    .space {
+        margin: 0;
+        padding: 0;
+    }
+
+    #nav-bar-container {
+        padding: 0;
+    }
+}
